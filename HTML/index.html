@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Github Hub</title> 
+  	
+   <link rel="stylesheet" href="css/site.css" />
+  		
+	
+ </head>
+ <body>
+<div class="container">
+  <header>
+<nav>
+    <ul>
+     <li><a href="/index.html">home</a></li>
+     <li><a href="/contact.html">Contact</a></li>
+     <li><a href="/about.html">About</a></li>
+    </ul> 
+    </nav>
+  <div class="border-image">Github Hub</div>
+	<div>This is a <em>site</em> to <strong>search</strong> Github for interesting project.</div>
+    
+  </header>
+  <section id="main">
+
+	<p>In this <i>sample site</i>, we'll <span>show a</span> 
+       list of <a href="http://github.com">Githab</a> projects and 
+      the data about <b>those projects</b>.</p>
+      <form action="http://wilder.azurewebsites.net/echo" method="POST" 
+	class="border-image simple-form" id="gitHubSearchForm">
+        <label for="searchPhrase">Search Phrase:</label>
+	<input type="text" name="searchPhrase" id="searchPhrase" /><br/>
+	<input type="checkbox" name="useStars" id="useStars" checked="true"/>
+       <label for="useStars">Use Stars?</label><br/>
+        <label for="langChoice">Language:</label>
+	 <select name="langChoice" id="langChoice">
+	  <option>All</option>
+	  <option>JavaScript</option>
+          <option selected>C#</option>
+	  <option>Java</option>
+	  <option>Ruby</option>
+        </select><br/>
+        <input type="submit" value="search"/>
+      </form>
+	<div id="results" class="border-image">
+	 <button id="toggleButton">Hide</button>
+	 <div id="resultList">This is where results will live...eventually.</div>
+	</div>
+
+  </section> 
+  <footer>
+   &copy; 2018 wudist LLC &gt; &lt; 
+  </footer>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+   
+
+
+</body>
+</html>
